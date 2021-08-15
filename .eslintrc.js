@@ -2,7 +2,8 @@ module.exports = {
   root: true,
   env: {
     browser: true,
-    node: true
+    node: true,
+    'cypress/globals': true
   },
   parserOptions: {
     parser: '@babel/eslint-parser',
@@ -13,6 +14,7 @@ module.exports = {
     'eslint:recommended'
   ],
   plugins: [
+    'cypress'
   ],
   // add your custom rules here
   rules: {

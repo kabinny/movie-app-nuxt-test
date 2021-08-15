@@ -8,7 +8,8 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
-    "lint": "npm run lint:js"
+    "lint": "npm run lint:js",
+    "test:e2e": "cypress open"
   },
   "browsersList": [
     "> 1%",
@@ -32,6 +33,7 @@
     "@nuxtjs/style-resources": "^1.2.1",
     "autoprefixer": "^10.3.1",
     "babel-eslint": "^10.1.0",
+    "cypress": "^8.2.0",
     "eslint": "^7.29.0",
     "eslint-plugin-nuxt": "^2.0.0",
     "eslint-plugin-vue": "^7.12.1",
