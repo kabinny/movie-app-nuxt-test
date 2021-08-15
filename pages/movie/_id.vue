@@ -107,7 +107,7 @@ export default {
   },
   head() {
     return {
-      mata: [
+      meta: [
         { hid: 'og:type', property: 'og:type', content: 'website' },
         { hid: 'og:site_name', property: 'og:site_name', content: 'Nuxt Movie App' },
         { hid: 'og:title', property: 'og:title', content: this.theMovie.Title },
