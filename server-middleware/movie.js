@@ -36,7 +36,15 @@ app.post('/', async (req, res) => {
     //   statusCode: error.response.status,
     //   body: error.message
     // }
-    res.status(error.response.status).json(error.message)
+    console.log('error: ', error)
+    if (typeof error.messsage === 'string') {
+      res
+        .status(400)
+        .json(error)
+    }
+    res
+      .status(error.response.status)
+      .json(error.message)
   }
 })
 
